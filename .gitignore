@@ -1,6 +1,11 @@
-bin
-obj
-.vscode
-.DS_Store
-appsettings.json
-*.db
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Reactivities/v15
+*.sqlite
+*/bin
+/API/obj
+/.vs
+/Persistence/obj
+/Domain/obj

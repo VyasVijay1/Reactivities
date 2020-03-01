@@ -9,3 +9,5 @@
 /.vs
 /Persistence/obj
 /Domain/obj
+/Application/obj/Debug
+/Application/obj

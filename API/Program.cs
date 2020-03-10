@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -26,6 +22,7 @@ namespace API
 				{
 					var context = services.GetRequiredService<DataContext>();
 					context.Database.Migrate();
+					Seed.SeedData(context);
 				}
 				catch(Exception ex)
 				{
